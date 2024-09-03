@@ -1,0 +1,105 @@
+Test list
+* Given an initialized game, Then Findus' Hero has Mana 3 and Health 21.
+
+* [OK] When Findus ends its turn, Then it is Peddersen in turn
+
+* Given Peddersen has played Uno, and Findus has played Tres, When Findus attacks Uno with Tres, 
+Then Uno is removed from Peddersen's field and Findus' Tres is on Findus' field with health 2.
+
+* Given an initialized game, When Findus' Hero uses hero power then the hero has Mana 1 and is no longer able to use power.
+
+* [OK] Given an initialized game, Then Findus is player in turn
+
+* [OK] Given an initialized game, then Dos is at index 1 in Findus' hand.
+
+* Given Findus has played Tres, Then Dos cannot be played And NOT_ENOUGH_MANA is returned.
+
+* Given Findus's Hero has used power in first turn, when it is again Findus' turn, then Hero is again able to use power.
+* When game starts Then Findus should have three cards in hand, Tres at index 0, Dos at index 1, and Uno at index 2.
+
+
+0 	1 	2
+Tres	Dos	Uno
+
+
+---------
+* Given an initialized game, then Dos is at index 1 in Findus' hand.
+TEST:
+ASSERT FIRST (CHECK):
+findusCard = game.getCardInHand(Player....).getName()
+assert(findusCard)
+
+FAKE IT TILL YOU MAKE IT (CANNOT FAKE IT)
+CardName -> CardName.DOS
+Card (interface) -> getName(CardName)
+Game (interface) -> getCardInHand(Findus, index)
+
+string cardInHand = "Dos" 
+
+
+Cards[0]
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------
+
+* Given an initialized game, When Findus' Hero uses hero power then the hero has Mana 1 and is no longer able to use power.
+
+TEST:
+ASSERT FIRST:
+# GIven an initialized game
+ TO BE DONE
+
+before usage of Mana
+HERO canUsePower() -> True
+after usage of Mana 1
+HERO canUsePower() -> False
+
+owner of the hero is Findus
+(HERO) Player getOwner() -> FINDUS
+
+# after usage of power we add 1 to mana of hero then we return power to false
+usePower(Findus) -> OK
+canUsePower -> False
+
+
+-----
+* Given an initialized game, Findus' Hero has Mana 0
+
+---
+* Given a game if player can use power, then use
+
+CanUsePower? if yes then usePower otherwise null
+usage = game.usePower(player);
+
+assert(usage ='OK', Hero.CanUsePower = True)
+
+
+----
+
+* Given a game if player cannot use power, then don't
+
+assert(usage = 'No', Hero.CanUsePower = False)
+
+
+
+
+
+
+
+
+
+ 
+
+
+
