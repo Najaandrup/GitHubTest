@@ -8,27 +8,27 @@ Test list
 
 * [OK] When game starts Then Findus should have three cards in hand, Tres at index 0, Dos at index 1, and Uno at index 2
 * [OK] When game starts then Findus should have three cards in hand (FAKE IT)
-* [OK] When game starts then Tres is at index 0
-* [OK] When game starts then Dos is at index 1
-* [OK] When game starts then Uno is at index 2
+* [OK] When game starts then Tres is at index 0 (MADE UP TEST)
+* [OK] When game starts then Dos is at index 1 (MADE UP TEST)
+* [OK] When game starts then Uno is at index 2(MADE UP TEST)
 * [OK] Given an initialized game, Pedersen should have three cards in hand (FAKE IT)
 
 * [OK] Given an initialized game, Pederson should have Uno at index 0 Dos at index 2 and Tres at index 1 (MADE UP TEST)
-* [OK] When game starts then Uno is at index 0 in Pedersens hand
-* [OK] When game starts then Dos  is at index 2 in Pedersens hand
-* [OK] When game starts then Tres is at index 1 in Pedersens hand
-* When Findus plays a card, He should have 2 cards in his hand
+* [OK] When game starts then Uno is at index 0 in Pedersens hand (MADE UP TEST)
+* [OK] When game starts then Dos  is at index 2 in Pedersens hand (MADE UP TEST)
+* [OK] When game starts then Tres is at index 1 in Pedersens hand (MADE UP TEST)
+* [OK] Given an initialized game, Then Findus' Hero has Mana 3 and Health 21. (FAKE IT)
+* [OK] Given an initialized game, Then Pedersens Hero has Mana 2 and Health 21 (MADE UP TEST)
 
+* Given Card Dos Then it has attributes (2,2,2) -> Attack, Health, Mana cost
+* Given Card Dos Then it has Mana cost 2
+* Given Card Dos Then it has Attack 2
+* Given Card Dos then it has Health 2
 
+* When Findus plays a card, He should have 2 cards in his hand (MADE UP)
 * When Findus plays a card, Then Peddersen still has 3 cards in his hand.
 
-
-
-
-
 * Given a game When Findus plays Uno, Then it is allowed (Status.OK), and Then minion Uno appears at index 0 on the field
-
-* Given an initialized game, Then Findus' Hero has Mana 3 and Health 21.
 
 * Given Peddersen has played Uno, and Findus has played Tres, When Findus attacks Uno with Tres, Then Uno is removed from Peddersen's field and Findus' Tres is on Findus' field with health 2.
 
