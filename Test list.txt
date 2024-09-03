@@ -1,46 +1,49 @@
 Test list
-* Given an initialized game, Then Findus' Hero has Mana 3 and Health 21.
-
-* [OK] When Findus ends its turn, Then it is Peddersen in turn
-
-* Given Peddersen has played Uno, and Findus has played Tres, When Findus attacks Uno with Tres, 
-Then Uno is removed from Peddersen's field and Findus' Tres is on Findus' field with health 2.
-
-* Given an initialized game, When Findus' Hero uses hero power then the hero has Mana 1 and is no longer able to use power.
 
 * [OK] Given an initialized game, Then Findus is player in turn
 
-* [OK] Given an initialized game, then Dos is at index 1 in Findus' hand.
+* [OK] When Findus ends its turn, Then it is Peddersen in turn
+
+* [OK] Given an initialized game, then Dos is at index 1 in Findus' hand. (FAKE IT)
+
+* [OK] When game starts Then Findus should have three cards in hand, Tres at index 0, Dos at index 1, and Uno at index 2
+* [OK] When game starts then Findus should have three cards in hand (FAKE IT)
+* [OK] When game starts then Tres is at index 0
+* [OK] When game starts then Dos is at index 1
+* [OK] When game starts then Uno is at index 2
+* [OK] Given an initialized game, Pedersen should have three cards in hand (FAKE IT)
+
+* [OK] Given an initialized game, Pederson should have Uno at index 0 Dos at index 2 and Tres at index 1 (MADE UP TEST)
+* [OK] When game starts then Uno is at index 0 in Pedersens hand
+* [OK] When game starts then Dos  is at index 2 in Pedersens hand
+* [OK] When game starts then Tres is at index 1 in Pedersens hand
+* When Findus plays a card, He should have 2 cards in his hand
+
+
+* When Findus plays a card, Then Peddersen still has 3 cards in his hand.
+
+
+
+
+
+* Given a game When Findus plays Uno, Then it is allowed (Status.OK), and Then minion Uno appears at index 0 on the field
+
+* Given an initialized game, Then Findus' Hero has Mana 3 and Health 21.
+
+* Given Peddersen has played Uno, and Findus has played Tres, When Findus attacks Uno with Tres, Then Uno is removed from Peddersen's field and Findus' Tres is on Findus' field with health 2.
+
+* Given an initialized game, When Findus' Hero uses hero power then the hero has Mana 1 and is no longer able to use power.
 
 * Given Findus has played Tres, Then Dos cannot be played And NOT_ENOUGH_MANA is returned.
 
 * Given Findus's Hero has used power in first turn, when it is again Findus' turn, then Hero is again able to use power.
 * When game starts Then Findus should have three cards in hand, Tres at index 0, Dos at index 1, and Uno at index 2.
 
+precondition: the card is a non-null card retrieved by the 'getCardInHand()' method.
+Index in range 0...getFieldSize(who)
 
-0 	1 	2
-Tres	Dos	Uno
-
-
----------
-* Given an initialized game, then Dos is at index 1 in Findus' hand.
-TEST:
-ASSERT FIRST (CHECK):
-findusCard = game.getCardInHand(Player....).getName()
-assert(findusCard)
-
-FAKE IT TILL YOU MAKE IT (CANNOT FAKE IT)
-CardName -> CardName.DOS
-Card (interface) -> getName(CardName)
-Game (interface) -> getCardInHand(Findus, index)
-
-string cardInHand = "Dos" 
-
-
-Cards[0]
-
-
-
+card = get.CardInHand(Findus, 'Dos')
+handsize -> array
 
 
 
